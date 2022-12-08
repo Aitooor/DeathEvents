@@ -1,0 +1,5 @@
+name: DeathEvents
+main: com.github.aitooor.deathevents.DeathEvents
+version: '${version}'
+description: Simple death events plugin
+api-version: 1.13

@@ -1,0 +1,13 @@
+# Use %player% to use sender name
+respawn_events:
+  commands:
+    - 'say Respawn 1'
+    - 'say Respawn 2'
+    - 'gamemode creative %player%'
+    - '/tellraw @a {"text":"¡Has Respaneado! Comandos ejecutados","color":"red"}'
+death_events:
+  commands:
+    - 'say Death 1'
+    - 'say Death 2'
+    - 'gamemode creative %player%'
+    - '/tellraw @a {"text":"¡Has muerto! Comandos ejecutados","color":"red"}'
