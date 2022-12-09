@@ -30,8 +30,10 @@ public class DeathListener implements Listener {
         if(!(player instanceof Player)) return;
 
         if(!config.getBoolean("death_events.enable")) {
-            if(player.hasPermission("deathevents.admin")) {
-                ChatUtils.send(player, messageFile.getString("death_events.no_enabled"));
+            if(messageFile.getBoolean("death_events.enable")) {
+                if (player.hasPermission("deathevents.admin")) {
+                    ChatUtils.send(player, messageFile.getString("death_events.no_enabled"));
+                }
             }
             return;
         }

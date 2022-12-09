@@ -3,6 +3,8 @@ error:
 commands:
   reload: "&aReloaded correctly"
 respawn_events:
+  enable: false
   no_enabled: "&cRespawn events are disabled in config"
 death_events:
+  enable: false
   no_enabled: "&cDeath events are disabled in config"

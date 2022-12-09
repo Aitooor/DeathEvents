@@ -31,8 +31,10 @@ public class RespawnListener implements Listener {
         if(!(player instanceof Player)) return;
 
         if(!config.getBoolean("respawn_events.enable")) {
-            if(player.hasPermission("deathevents.admin")) {
-                ChatUtils.send(player, messageFile.getString("respawn_events.no_enabled"));
+            if(messageFile.getBoolean("respawn_events.enable")) {
+                if (player.hasPermission("deathevents.admin")) {
+                    ChatUtils.send(player, messageFile.getString("respawn_events.no_enabled"));
+                }
             }
             return;
         }
