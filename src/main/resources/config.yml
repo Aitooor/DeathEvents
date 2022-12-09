@@ -1,3 +1,4 @@
+## You must leave one of the two activated!
 # Use %player% to use sender name
 respawn_events:
   enable: true
