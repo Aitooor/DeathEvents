@@ -1,0 +1,8 @@
+error:
+  both_false: "You can't put both of events to false. Enable one of both to enable the plugin"
+commands:
+  reload: "&aReloaded correctly"
+respawn_events:
+  no_enabled: "&cRespawn events are disabled in config"
+death_events:
+  no_enabled: "&cDeath events are disabled in config"
